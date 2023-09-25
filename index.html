@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -41,15 +42,15 @@
             </span>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img1.jpg" alt="">
-                <h1 class="titulo">imagem 1</h1>
+                <h1 class="titulo">Chihuahua</h1>
             </div>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img2.jpg" alt="">
-                <h1 class="titulo">Imagem 2</h1>
+                <h1 class="titulo">Golden 1</h1>
             </div>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img3.jpg" alt="">
-                <h1 class="titulo">Imagem 3</h1>
+                <h1 class="titulo">Chow-Chow</h1>
             </div>
             <span>
             </span>
@@ -57,16 +58,16 @@
             </span>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img4.png" alt="">
-                <h1 class="titulo">Imagem 4</h1>
+                <h1 class="titulo">Rottweiler</h1>
             </div>
     
             <div class="div-imagem">
                 <img class="Imagem" src="img/img5.jpg" alt="">
-                <h1 class="titulo">Imagem 5</h1>
+                <h1 class="titulo">Golden 2</h1>
             </div>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img6.jpg" alt="">
-                <h1 class="titulo">Imagem 6</h1>
+                <h1 class="titulo">Pastor alemão 2</h1>
             </div>
             <span>
             </span>
@@ -74,18 +75,62 @@
             </span>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img7.jpg" alt="">
-                <h1 class="titulo">Imagem 7</h1>
+                <h1 class="titulo">Pastor-alemão</h1>
             </div>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img8.jpg" alt="">
-                <h1 class="titulo">Imagem 8</h1>
+                <h1 class="titulo">Husky siberiano</h1>
             </div>
             <div class="div-imagem">
                 <img class="Imagem" src="img/img9.jpg" alt="">
-                <h1 class="titulo">Imagem 9</h1>
+                <h1 class="titulo">Yorkshire terrier</h1>
             </div>
         </div>
 
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo"> LIVROS
+                 <!-- Slider main container -->
+        <div class="swiper">
+             <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/2.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/3.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/4.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/5.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/6.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/7.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/8.svg" alt=""></div>
+    ...
+         </div>
+
+
+             <!-- If we need navigation buttons -->
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+              }
+        });
+    </script>
+}
+
+</body>
+</html>
 </body>
 </html>
